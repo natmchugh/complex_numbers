@@ -1,0 +1,8 @@
+Instalation
+----------------------------
+
+phpize
+./configure
+make
+make test
+make install

@@ -1,0 +1,8 @@
+// vim:ft=javascript
+
+ARG_ENABLE("complex_numbers", "Enable complex number support", "no");
+
+if (PHP_HELLO_WORLD != "no") {
+	EXTENSION("complex_numbers", "complex_numbers.cpp");
+	AC_DEFINE('HAVE_COMPLEX_NUMBER', 1, 'complex number support');
+}
