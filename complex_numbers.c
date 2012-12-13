@@ -187,14 +187,6 @@ zend_module_entry complex_numbers_module_entry = {
 	STANDARD_MODULE_PROPERTIES
 };
 
-void php_complex_numbers_addprops(zval *objvar)
-{
-    char *propname;
-    int propname_len;
-    /* Public */
-    add_property_long(objvar, "Chapter", 11);
-}
-
 
 #ifdef COMPILE_DL_COMPLEX_NUMBERS
 ZEND_GET_MODULE(complex_numbers)
